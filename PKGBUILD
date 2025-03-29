@@ -1,6 +1,6 @@
 # Maintainer: Your Name <your.email@example.com>
 pkgname=PromptFlow
-pkgver=0.1.0
+pkgver=0.2.0
 pkgrel=1
 arch=('x86_64')
 url="https://github.com/Shaharyar-developer/PromptFlow"
