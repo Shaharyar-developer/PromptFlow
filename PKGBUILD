@@ -1,5 +1,5 @@
 # Maintainer: Your Name <your.email@example.com>
-pkgname=prompt-flow
+pkgname=PromptFlow
 pkgver=0.1.0
 pkgrel=1
 arch=('x86_64')

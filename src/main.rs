@@ -1,4 +1,3 @@
-use credentials;
 use gemini_rs;
 use std::env;
 use std::path::PathBuf;
@@ -137,7 +136,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                 // File exists but is empty or unreadable, try argument or env var
                 match api_key {
                     Some(k) => k,
-                    None => match credentials::var("GENAI_API_KEY") {
+                    None => match env::var("GENAI_API_KEY") {
                         Ok(k) => {
                             // Write key to temp file for future use
                             std::fs::write(&temp_path, &k)?;
@@ -161,7 +160,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                 std::fs::write(&temp_path, &k)?;
                 k
             }
-            None => match credentials::var("GENAI_API_KEY") {
+            None => match env::var("GENAI_API_KEY") {
                 Ok(k) => {
                     // Write key to temp file for future use
                     std::fs::write(&temp_path, &k)?;
