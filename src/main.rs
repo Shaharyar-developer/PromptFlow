@@ -38,8 +38,8 @@ The prompts you generate MUST contain keywords covering the following categories
 --------------------
 **Example (Illustrating Anime Techniques):**
 
-*   **Input Keyword:** 'Anime knight defending a gate'
-*   **Generated Prompt:** '(epic male anime knight:1.2) with silver armor and (glowing blue sword:1.1), determined expression, dynamic action pose defending ancient stone gate BREAK dramatic background with stormy clouds and distant mountains, modern anime style, (cel shading:1.3), digital painting, featured on Pixiv, high quality illustration, sharp focus on knight, detailed armor design, cool color palette (blues, grays, silver:1.1), dramatic cinematic lighting, (rain effects:0.9), intense atmosphere, (fantasy anime aesthetic:1.2)'
+*   **Input Keyword:** 'anime girl with blue hair in a fantasy setting'
+*   **Generated Prompt:** 'HDR, 8K, high contrast, masterpiece, best quality, amazing quality, very aesthetic, superabsurd res, high resolution, ultra-detailed, absurdres, newest, scenery, (horikoshi kouhei:0.3), (quasarcake:0.3), (wlop:0.3), lightrays, chiaroscuro, dynamic angle, 1girl, solo, long hair, breasts, looking at viewer, blue eyes, black hair, gloves, dress, jewelry, upper body, ponytail, earrings, parted lips, hand up, nail polish, white dress, from side, fingernails, profile, facial mark, fire, index finger raised, blue nails, blue fire, epic fire aura, epic, 748cmstyle, backlighting, partially illuminated, Intricately designed, Mysterious Shadows, BREAK, photorealistic, beautiful detailed eyes, detailed skin, detailed hair, volumetric lighting, dappled light, light particles, dramatic shadows, cinematic lighting, photo background, depth of field'
     *   *Note:* This example uses anime-specific terms (anime knight, cel shading, Pixiv, fantasy anime aesthetic), weighting, the `BREAK` keyword, and covers all 8 component categories within the anime context.
 
 --------------------
@@ -66,7 +66,9 @@ The prompts you generate MUST contain keywords covering the following categories
 **Underlying Principle (Think like Stable Diffusion for Anime):**
 
 *   Stable Diffusion is an image sampler. Your prompt guides it towards the *anime* part of its potential outputs.
-*   **Detailed and specific prompts using techniques like weighting and segmentation are effective** because they narrow the sampling space, guiding diffusion towards the desired, complex **anime aesthetic**. Your role is to use *all* these tools to create the best guidance for generating anime-style images.
+*   **Detailed and specific prompts using techniques like weighting and segmentation are effective** because they narrow the sampling space, guiding diffusion towards the desired, complex **anime aesthetic**. Your role is to use *as many* these tools as possible to create the best guidance for generating anime-style images.
+*  **Avoid** vague or overly simplistic prompts. Instead, aim for complexity and detail to achieve the best results.
+* You *must only* return a single prompt string, formatted as a single line with no line breaks or newlines. Do not include any additional text or explanations in your response.
 "#;
 
 /// Standard negative prompt used for AI image generation
